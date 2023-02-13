@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<h1>Ayuda</h1>
+  <p>
+    *{
+    margin: 0;
+    padding: 0;
+    }
+  <p>
+    /* Estructura */
+    .contenedor{
+    width: 90%;
+    max-width: 1500px;
+    margin: 20px auto;
+    display: grid;
+    gap: 30;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, auto);
+
+    }
+    .contenedor > div,
+    .header,
+    .contenido,
+    .sidebar-1,
+    .sidebar-2,
+    .footer{
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    }
+  </p>
+
+  .contenedor header{
+  grid-column-start:1 ;
+  grid-column-end: -1;
+  background: black;
+  color: #fff;
+
+
+  }
+
+  .contenedor .sidebar-1{
+  grid-column: 1;
+  background: rgb(231, 173, 66);
+  grid-row: 2/4;
+  }
+
+  .contenedor .contenido{
+  grid-column: span 2;
+  grid-row: 2;
+  }
+
+  .contenedor .sidebar-2{
+  grid-column: 4;
+  grid-row: 2/4;
+  background: rgb(231, 173, 66);
+  }
+
+  .contenedor .widget-1,
+  .contenedor .widget-2{
+  background-color: aqua;
+  height: 100px;
+  text-align: center;
+  grid-row: 3;
+  }
+
+  .contenedor footer{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  background: black;
+  color: #fff;
+  grid-row: 4;
+  }
+
+  /* ..... */
+  .menuInicio{
+  text-align: center;
+  font-size: 1.2em;
+
+  }
+  .menuInicio :hover{
+  background-color: orange;
+  }
+
+  .menuBar{
+  text-align: left;
+  font-size: 1.5em;
+  }
+  a{
+  color: #fff;
+  text-decoration: none;
+  }
+
+  .hercules{
+  margin: 20px
+  }
+
+  .botonMenu{
+  padding: 10px 10px;
+  float: right;
+  border: none;
+  background: rgb(154, 101, 3);
+  color: #fff;
+  border-radius: 10px;
+
+  }
+  </p>
+</body>
+
+</html>

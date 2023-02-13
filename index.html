@@ -9,110 +9,187 @@
 </head>
 
 <body>
-<h1>Ayuda</h1>
+  
   <p>
     *{
+    <br>
     margin: 0;
+    <br>
+
     padding: 0;
+    <br>
     }
+
   <p>
     /* Estructura */
+    <br>
     .contenedor{
+    <br>
     width: 90%;
+    <br>
     max-width: 1500px;
+    <br>
     margin: 20px auto;
+    <br>
     display: grid;
+    <br>
     gap: 30;
+    <br>
     grid-template-columns: repeat(4,1fr);
+    <br>
     grid-template-rows: repeat(4, auto);
+    <br>
 
     }
+    <br>
     .contenedor > div,
+    <br>
     .header,
+    <br>
     .contenido,
+    <br>
     .sidebar-1,
+    <br>
     .sidebar-2,
+    <br>
     .footer{
+    <br>
     background: #fff;
+    <br>
     padding: 20px;
+    <br>
     border-radius: 5px;
+    <br>
     }
+    <br>
   </p>
 
   .contenedor header{
+  <br>
   grid-column-start:1 ;
+  <br>
   grid-column-end: -1;
+  <br>
   background: black;
+  <br>
   color: #fff;
-
+  <br>
 
   }
-
+  <br>
   .contenedor .sidebar-1{
+  <br>
   grid-column: 1;
+  <br>
   background: rgb(231, 173, 66);
+  <br>
   grid-row: 2/4;
+  <br>
   }
+  <br>
 
   .contenedor .contenido{
+  <br>
   grid-column: span 2;
+  <br>
   grid-row: 2;
+  <br>
   }
-
+  <br>
   .contenedor .sidebar-2{
+  <br>
   grid-column: 4;
+  <br>
   grid-row: 2/4;
+  <br>
   background: rgb(231, 173, 66);
+  <br>
   }
-
+  <br>
   .contenedor .widget-1,
+  <br>
   .contenedor .widget-2{
+  <br>
   background-color: aqua;
+  <br>
   height: 100px;
+  <br>
   text-align: center;
+  <br>
   grid-row: 3;
+  <br>
   }
 
+  <br>
   .contenedor footer{
+  <br>
   grid-column-start: 1;
+  <br>
   grid-column-end: -1;
+  <br>
   background: black;
+  <br>
   color: #fff;
+  <br>
   grid-row: 4;
+  <br>
   }
-
+  <br>
   /* ..... */
+  <br>
   .menuInicio{
+  <br>
   text-align: center;
+  <br>
   font-size: 1.2em;
-
+  <br>
   }
+  <br>
   .menuInicio :hover{
+  <br>
   background-color: orange;
+  <br>
   }
-
+  <br>
   .menuBar{
+  <br>
   text-align: left;
+  <br>
   font-size: 1.5em;
+  <br>
   }
+  <br>
   a{
+    <br>
   color: #fff;
+  <br>
   text-decoration: none;
+  <br>
   }
-
+<br>
   .hercules{
+    <br>
   margin: 20px
+  <br>
   }
-
+<br>
   .botonMenu{
+    <br>
   padding: 10px 10px;
+  <br>
   float: right;
+  <br>
   border: none;
+  <br>
   background: rgb(154, 101, 3);
+  <br>
   color: #fff;
+  <br>
   border-radius: 10px;
+  <br>
 
   }
+  <br>
   </p>
   <p>
     @media only screen and (max-width: 460px){
